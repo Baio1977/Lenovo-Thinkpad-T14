@@ -9,24 +9,24 @@ Follow guide at your own risk, neither I nor OSXL will take responsibility if th
 Specification:
 
 Bios: 1.32
-CPU: Intel Core i5-10310u (Comet Lake) @ 1.70GHz
-Memory: 1x 8GB DDR4 2666Mhz (Soldered + 1 open slot)
-Harddrive: 1x 256 PCIeNVMeOPAL (PM981) //Needs to be replaced
-Display: 14" non-touch 1920x1080 IPS, anti-glare 
-GPU: Intel UHD 620
-Camera: 1x IR Camera & RGB 720p HD Camera & Mic with Thinkpad Privacy Shutter
-WLAN: Intel Wi-Fi 6 AX201 802.11ax 2x2 with BT5.2 (Soldered on)
-Battery: Integrate Li-Polymer 50Wh internal battery - Up to 16.5 hours*
-Touchpad: Synaptics 
-Audio: Realtek HDA ALC257 (aka ALC3287)
-2 x USB 3.2 Gen 1** (one Always On)
-1 x USB 3.2 Gen 1 Type-C (Power Delivery, DisplayPort, Data transfer)
-1 x USB 3.2 Gen 2 Type-C / Intel Thunderbolt 3 (Power Delivery, DisplayPort, Data transfer)
-MicroSD card reader (Realtek RTL522a)
-Headphone / mic combo
-Micro-SIM slot
-HDMI 1.4b
-RJ45 Gigabit Ethernet I219-LM
+- CPU: Intel Core i5-10310u (Comet Lake) @ 1.70GHz
+- Memory: 1x 8GB DDR4 2666Mhz (Soldered + 1 open slot)
+- Harddrive: 1x 256 PCIeNVMeOPAL (PM981) //Needs to be replaced
+- Display: 14" non-touch 1920x1080 IPS, anti-glare 
+- GPU: Intel UHD 620
+- Camera: 1x IR Camera & RGB 720p HD Camera & Mic with Thinkpad Privacy Shutter
+- WLAN: Intel Wi-Fi 6 AX201 802.11ax 2x2 with BT5.2 (Soldered on)
+- Battery: Integrate Li-Polymer 50Wh internal battery - Up to 16.5 hours*
+- Touchpad: Synaptics 
+- Audio: Realtek HDA ALC257 (aka ALC3287)
+- 2 x USB 3.2 Gen 1** (one Always On)
+- 1 x USB 3.2 Gen 1 Type-C (Power Delivery, DisplayPort, Data transfer)
+- 1 x USB 3.2 Gen 2 Type-C / Intel Thunderbolt 3 (Power Delivery, DisplayPort, Data transfer)
+- MicroSD card reader (Realtek RTL522a)
+- Headphone / mic combo
+- Micro-SIM slot
+- HDMI 1.4b
+- RJ45 Gigabit Ethernet I219-LM
  
 
 BIOS Settings:
@@ -52,15 +52,14 @@ Working:
  HDMI video and audio 
  USB-C to HDMI Video and audio works
  USB-C to USB-C Video but no audio
+ Thunderbolt 
 Note: For dual external display to work, you need to connect to HDMI display 1st before USB-C to USB-C
 
  
-
 Not Tested:
 
-Thunderbolt 
- 
 
+ 
 Installation:
 
 Download MacOS Monterey / Big Sur / Catalina app

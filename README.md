@@ -1,7 +1,7 @@
 # Lenovo-Thinkpad-T14-
 Hackintosh on Lenovo Thinkpad T14 I5 10310U
 
-![Lenovo](./Screen/1.png)
+![Lenovo](./Screenshot/1.png)
  
 
 Specification:

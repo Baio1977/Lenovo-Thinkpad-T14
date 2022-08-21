@@ -87,8 +87,6 @@ Note bootpack include AirportItlwm for Intel wifi but won't work with hidden net
 Use Itlwm.kext + Heliport.app instead if you connect to hidden network
  
 Thinkpad Assistant Features:
-
-  Hide contents
  
 - F1: Mute Audio (with Status LED indication)
 - F2: Volume Down

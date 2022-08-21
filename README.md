@@ -90,18 +90,18 @@ Thinkpad Assistant Features:
 
   Hide contents
  
-F1: Mute Audio (with Status LED indication)
-F2: Volume Down
-F3: Volume Up
-F4: Mute / Unmute Microphone (with Status LED indication)
-F5: Brightness Down / Dim
-F6: Brightness Up
-F7: Screen mirroring / Screen extending
-F8: Activate / Deactivate Wi-Fi
-F9: Open System Preferences
-F10: Activate / Deactivate Bluetooth
-F11: Show Destop
-F12: Open Launchpad
-FN+Spacebar: Toggle Keyboard Backlight
+- F1: Mute Audio (with Status LED indication)
+- F2: Volume Down
+- F3: Volume Up
+- F4: Mute / Unmute Microphone (with Status LED indication)
+- F5: Brightness Down / Dim
+- F6: Brightness Up
+- F7: Screen mirroring / Screen extending
+- F8: Activate / Deactivate Wi-Fi
+- F9: Open System Preferences
+- F10: Activate / Deactivate Bluetooth
+- F11: Show Destop
+- F12: Open Launchpad
+- FN+Spacebar: Toggle Keyboard Backlight
  
 

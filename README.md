@@ -1,6 +1,7 @@
 # Lenovo Thinkpad T14
 
 ![Lenovo](./Screenshot/1.png)
+![Lenovo](./Screenshot/2.png)
  
 Specification:
 

@@ -8,8 +8,8 @@ Specification:
 Bios: 1.25
 
 - CPU: Intel Core i5-10310u (Comet Lake) @ 1.70GHz
-- Memory: 1x 8GB DDR4 2666Mhz (Soldered + 1 open slot)
-- Harddrive: 1x 256 PCIeNVMeOPAL (PM981) //Needs to be replaced
+- Memory: 1x 16GB DDR4 2666Mhz
+- Harddrive: 1x 256 PCIeNVMeOPAL Samsung 970 Evo Plus
 - Display: 14" non-touch 1920x1080 IPS, anti-glare 
 - GPU: Intel UHD 620
 - Camera: 1x IR Camera & RGB 720p HD Camera & Mic with Thinkpad Privacy Shutter

@@ -1,12 +1,11 @@
-# Lenovo-Thinkpad-T14-
-Hackintosh on Lenovo Thinkpad T14 I5 10310U
+# Lenovo Thinkpad T14
 
 ![Lenovo](./Screenshot/1.png)
  
-
 Specification:
 
-Bios: 1.32
+Bios: 1.25
+
 - CPU: Intel Core i5-10310u (Comet Lake) @ 1.70GHz
 - Memory: 1x 8GB DDR4 2666Mhz (Soldered + 1 open slot)
 - Harddrive: 1x 256 PCIeNVMeOPAL (PM981) //Needs to be replaced
@@ -29,8 +28,33 @@ Bios: 1.32
 
 BIOS Settings:
 
-  Reveal hidden contents
- 
+- Under Config Tap
+
+    Display
+
+       Boot Display Device -> Thinkpad LCD
+
+       Shared Display Priority -> USB Type-C
+
+       Total Garphics Memory ->256MB
+
+       Boot Time Extension -> Disabled
+
+- Under Security Tap
+
+    Memory Protection -> Execution Prevention -> On
+
+    Secure Boot -> Secure Boot -> Off
+
+                         -> Platform Mode -> UserMode
+
+                         ->Secure Boot Mode -> Standard Mode
+
+- Under Startup Tap
+
+    UEFI/Legacy Boot ->UEFI Only
+
+       CSM Support -> No 
 
 Working:
 
@@ -51,43 +75,21 @@ Working:
  USB-C to HDMI Video and audio works
  USB-C to USB-C Video but no audio
  Thunderbolt 
+ 
 Note: For dual external display to work, you need to connect to HDMI display 1st before USB-C to USB-C
 
  
 Not Tested:
 
 
- 
-Installation:
-
-Download MacOS Monterey / Big Sur / Catalina app
-Format a 16GB USB drive (GUID / Extended (Journaled))
-Create USB Installer with createinstallmedia command
-Download attached folder and rename as EFI
-Mount EFI partition and add EFI folder
-Configure BIOS setting according to guide
-Boot with USB installer
-Complete installation
- 
-
-Post Installation:
-
-Mount EFI partition of newly installed drive and copy EFI folder over
-Update / Change in Config.plist under PlatformID->Generic (use genSMBIOS or Hackintool.app)
-           MLB, ROM, SystemSerialNumber and SystemUUID
-
 Install ThinkpadAssistant.app (attached), set it to Launch at Login
 Note bootpack include AirportItlwm for Intel wifi but won't work with hidden networks
 Use Itlwm.kext + Heliport.app instead if you connect to hidden network
  
-
- 
-
 Thinkpad Assistant Features:
 
   Hide contents
  
-
 F1: Mute Audio (with Status LED indication)
 F2: Volume Down
 F3: Volume Up

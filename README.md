@@ -1,9 +1,7 @@
 # Lenovo-Thinkpad-T14-
-Hackintosh on Lenovo Thinkpad T14 I5 10310U 
-!Warning! Warning! Warning!
+Hackintosh on Lenovo Thinkpad T14 I5 10310U
 
-Follow guide at your own risk, neither I nor OSXL will take responsibility if the process bricks your system.
-
+![Lenovo](./Screen/1.png)
  
 
 Specification:

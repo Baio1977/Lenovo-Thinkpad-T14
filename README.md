@@ -58,23 +58,23 @@ BIOS Settings:
 
 Working:
 
- Keyboard (including all Fn keys)
- Trackpad with gestures / Trackstick
- Battery indicator
- Display auto brightness
- Audio (Internal and headphone jack)
- Microphone
- Ethernet
- GPU acceleration
- Camera
- Intel Wireless / Bluetooth (soldered in so can't be replaced)
- Sleep / Wake
- Native CPU power management
- MicroSD card reader
- HDMI video and audio 
- USB-C to HDMI Video and audio works
- USB-C to USB-C Video but no audio
- Thunderbolt 
+ - Keyboard (including all Fn keys)
+ - Trackpad with gestures / Trackstick
+ - Battery indicator
+ - Display auto brightness
+ - Audio (Internal and headphone jack)
+ - Microphone
+ -  Ethernet
+ -  GPU acceleration
+ - Camera
+ -  Intel Wireless / Bluetooth (soldered in so can't be replaced)
+ - Sleep / Wake
+ - Native CPU power management
+ - MicroSD card reader
+ - HDMI video and audio 
+ - USB-C to HDMI Video and audio works
+ - USB-C to USB-C Video but no audio
+ - Thunderbolt 
  
 Note: For dual external display to work, you need to connect to HDMI display 1st before USB-C to USB-C
 

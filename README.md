@@ -65,10 +65,10 @@ Working:
  - Display auto brightness
  - Audio (Internal and headphone jack)
  - Microphone
- -  Ethernet
- -  GPU acceleration
+ - Ethernet
+ - GPU acceleration
  - Camera
- -  Intel Wireless / Bluetooth (soldered in so can't be replaced)
+ - Intel Wireless / Bluetooth (soldered in so can't be replaced)
  - Sleep / Wake
  - Native CPU power management
  - MicroSD card reader

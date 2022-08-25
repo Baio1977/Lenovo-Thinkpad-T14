@@ -3,7 +3,7 @@
 ![Lenovo](./Screenshot/1.png)
 ![Lenovo](./Screenshot/2.png)
  
-Specification:
+## Specification:
 
 Bios: 1.25
 
@@ -27,7 +27,7 @@ Bios: 1.25
 - RJ45 Gigabit Ethernet I219-LM
  
 
-BIOS Settings:
+## BIOS Settings:
 
 - Under Config Tap
 
@@ -57,7 +57,7 @@ BIOS Settings:
 
        CSM Support -> No 
 
-Working:
+## Working:
 
  - Keyboard (including all Fn keys)
  - Trackpad with gestures / Trackstick
@@ -78,16 +78,16 @@ Working:
  - Thunderbolt 
  
 Note: For dual external display to work, you need to connect to HDMI display 1st before USB-C to USB-C
-
  
-Not Tested:
+## Not Tested:
 
+## ThinkpadAssistant.app
 
-Install ThinkpadAssistant.app (attached), set it to Launch at Login
+Install ThinkpadAssistant.app, set it to Launch at Login
 Note bootpack include AirportItlwm for Intel wifi but won't work with hidden networks
 Use Itlwm.kext + Heliport.app instead if you connect to hidden network
  
-Thinkpad Assistant Features:
+# Features:
  
 - F1: Mute Audio (with Status LED indication)
 - F2: Volume Down

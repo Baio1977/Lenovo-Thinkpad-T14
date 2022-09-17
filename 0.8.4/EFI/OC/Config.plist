@@ -513,7 +513,7 @@
                     <key>device_type</key>
                     <string>Serial controller</string>
                     <key>model</key>
-                    <string>???</string>
+                    <string>UART Controller</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
                 <dict>
@@ -529,7 +529,7 @@
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,28,0/0,0</string>
                     <key>device_type</key>
-                    <string>Unassigned class</string>
+                    <string>SDReader controller</string>
                     <key>model</key>
                     <string>RTS522A PCI Express Card Reader</string>
                 </dict>
@@ -681,12 +681,16 @@
                 <dict>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,31,3</string>
+                    <key>alc-delay</key>
+                    <integer>500</integer>
+                    <key>alc-verbs</key>
+                    <data>AQAAAA==</data>
                     <key>device_type</key>
                     <string>Audio device</string>
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
                     <key>layout-id</key>
-                    <integer>97</integer>
+                    <integer>86</integer>
                     <key>model</key>
                     <string>High Definition Audio Controller</string>
                 </dict>
@@ -1616,13 +1620,13 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>FVF930301QX00001F</string>
+                <string>FVF933802GU0000JA</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>fGhi4DLJ</data>
+                <data>Axp07ULa</data>
                 <key>SpoofVendor</key>
                 <false/>
                 <key>SystemMemoryStatus</key>
@@ -1630,9 +1634,9 @@
                 <key>SystemProductName</key>
                 <string>MacBookPro15,4</string>
                 <key>SystemSerialNumber</key>
-                <string>FVFZ40TSL40Y</string>
+                <string>FVFZ7MZUL40Y</string>
                 <key>SystemUUID</key>
-                <string>DAB8BBC6-274D-4585-8E6A-8D2DF2A0BCDA</string>
+                <string>9399F806-05A4-41CE-B9F9-B4253A813CD7</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>

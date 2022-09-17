@@ -5,23 +5,22 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLTE7f3K.aml, Mon Sep  5 21:53:11 2022
+ * Disassembly of iASL9jQ31n.aml, Sat Sep 17 17:23:39 2022
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x0000113E (4414)
+ *     Length           0x000010B9 (4281)
  *     Revision         0x02
- *     Checksum         0x7B
- *     OEM ID           "OCLT"
- *     OEM Table ID     "BATT"
+ *     Checksum         0x0B
+ *     OEM ID           "Hack"
+ *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20200925 (538970405)
  */
-DefinitionBlock ("", "SSDT", 2, "OCLT", "BATT", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
 {
     External (_GPE.XTFY, MethodObj)    // 2 Arguments
-    External (_SB_.LID_, DeviceObj)
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.GFX0, DeviceObj)
     External (_SB_.PCI0.LPCB, DeviceObj)
@@ -37,25 +36,17 @@ DefinitionBlock ("", "SSDT", 2, "OCLT", "BATT", 0x00000000)
     External (_SB_.PCI0.LPCB.EC__.XQ64, MethodObj)    // 0 Arguments
     External (_SB_.PCI0.LPCB.EC__.XQ66, MethodObj)    // 0 Arguments
     External (_SB_.PCI0.LPCB.EC__.XQ6A, MethodObj)    // 0 Arguments
-    External (_SB_.PCI0.LPCB.HPET, DeviceObj)
     External (_SB_.PCI0.LPCB.KBD_, DeviceObj)
-    External (_SB_.PCI0.LPCB.LID0, DeviceObj)
-    External (_SB_.PCI0.LPCB.LID_, DeviceObj)
     External (_SB_.PCI0.RP05, DeviceObj)
     External (_SB_.PCI0.RP05.PXSX, DeviceObj)
     External (_SB_.PCI0.RP05.UPSB.DSB0.NHI0, UnknownObj)
-    External (_SB_.PCI0.XHC_.PMEE, FieldUnitObj)
     External (_SB_.PR00, ProcessorObj)
     External (DPTF, FieldUnitObj)
     External (HPTE, IntObj)
     External (HRUS, IntObj)
     External (LNUX, IntObj)
     External (OSYS, FieldUnitObj)
-    External (RPS0, IntObj)
-    External (RPS1, IntObj)
-    External (RTBT, IntObj)
     External (STAS, FieldUnitObj)
-    External (TBTS, IntObj)
     External (WIN8, FieldUnitObj)
     External (WNTF, IntObj)
     External (XPRW, MethodObj)    // 2 Arguments

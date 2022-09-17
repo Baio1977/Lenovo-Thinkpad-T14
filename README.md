@@ -11,7 +11,7 @@
  
 ## Specification:
 
-Bios: 1.25
+Bios: 1.26
 
 - CPU: Intel Core i5-10310u (Comet Lake) @ 1.70GHz
 - Memory: 1x 16GB DDR4 2666Mhz

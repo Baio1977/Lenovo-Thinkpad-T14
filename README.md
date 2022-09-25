@@ -97,3 +97,9 @@ Note: For dual external display to work, you need to connect to HDMI display 1st
 ![Lenovo](./Screenshot/5.png)
 ![Lenovo](./Screenshot/6.png) 
 
+## Credits
+
+- [Apple](https://apple.com) for macOS.
+- [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
+- [Dortania](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html) For great and detailed guides.
+- [Hackintoshlifeit](https://github.com/Hackintoshlifeit) Support group for installation and post installation.

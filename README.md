@@ -88,9 +88,12 @@ Note: For dual external display to work, you need to connect to HDMI display 1st
 ## Not Tested:
 
 ## SSDT Full Hack
+
 ![Lenovo](./Screenshot/3.png)
 ![Lenovo](./Screenshot/4.png)
 
 ## YogaSMC Panel
- 
+
+![Lenovo](./Screenshot/5.png)
+![Lenovo](./Screenshot/6.png) 
 

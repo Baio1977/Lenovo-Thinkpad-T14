@@ -1,5 +1,22 @@
 /*
- * SSDT Full Hack Lenovo T14 CometLake
+ * Intel ACPI Component Architecture
+ * AML/ASL+ Disassembler version 20200925 (64-bit version)
+ * Copyright (c) 2000 - 2020 Intel Corporation
+ * 
+ * Disassembling to symbolic ASL+ operators
+ *
+ * Disassembly of iASLzVObJq.aml, Sun Oct  2 20:11:30 2022
+ *
+ * Original Table Header:
+ *     Signature        "SSDT"
+ *     Length           0x00000D6B (3435)
+ *     Revision         0x02
+ *     Checksum         0x52
+ *     OEM ID           "Hack"
+ *     OEM Table ID     "HackLife"
+ *     OEM Revision     0x00000000 (0)
+ *     Compiler ID      "INTL"
+ *     Compiler Version 0x20200925 (538970405)
  */
 DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
 {
@@ -320,6 +337,15 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
                 {
                     Scope (RP05)
                     {
+                        Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                        {
+                            Return (Package (0x02)
+                            {
+                                0x69, 
+                                0x03
+                            })
+                        }
+
                         Scope (PXSX)
                         {
                             Name (_STA, Zero)  // _STA: Status

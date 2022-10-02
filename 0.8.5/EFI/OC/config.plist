@@ -109,6 +109,36 @@
                     <key>TableSignature</key>
                     <data></data>
                 </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>Rename Method (RP05)_PRW to ZPRW</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>BV9QUlc=</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>BVpQUlc=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
             </array>
             <key>Quirks</key>
             <dict>
@@ -202,8 +232,6 @@
                 <dict>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,20,0</string>
-                    <key>acpi-wake-type</key>
-                    <data>AQAAAA==</data>
                     <key>device_type</key>
                     <string>USB controller</string>
                     <key>model</key>
@@ -477,6 +505,8 @@
                     <data>AQAAAA==</data>
                     <key>enable-hdmi20</key>
                     <data>AQAAAA==</data>
+                    <key>enable-metal</key>
+                    <data>AQAAAA==</data>
                     <key>force-online</key>
                     <data>AQAAAA==</data>
                     <key>force-online-framebuffers</key>
@@ -509,8 +539,12 @@
                     <data>AAAwAQ==</data>
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
+                    <key>igfxfw</key>
+                    <data>AgAAAA==</data>
                     <key>model</key>
                     <string>Intel UHD Graphics 620</string>
+                    <key>rps-control</key>
+                    <data>AQAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x4,0x0)</key>
                 <dict>
@@ -1389,7 +1423,7 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>FVF010401CD0000JC</string>
+                <string>FVF923902GU0000UE</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -1403,9 +1437,9 @@
                 <key>SystemProductName</key>
                 <string>MacBookPro15,4</string>
                 <key>SystemSerialNumber</key>
-                <string>FVFCDCZML40Y</string>
+                <string>FVFYT0ZML40Y</string>
                 <key>SystemUUID</key>
-                <string>FA084FDF-2820-47BF-9D77-7F33386C8056</string>
+                <string>7100497B-3E86-40A0-B26D-499EF36F30F1</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>

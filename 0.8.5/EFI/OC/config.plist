@@ -483,14 +483,10 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
-                    <key>#enable-max-pixel-clock-override</key>
-                    <data>AQAAAA==</data>
                     <key>AAPL,GfxYTile</key>
                     <data>AQAAAA==</data>
                     <key>AAPL,ig-platform-id</key>
                     <data>AACbPg==</data>
-                    <key>AAPL,slot-name</key>
-                    <string>Internal@0,2,0</string>
                     <key>agdpmod</key>
                     <string>pikera</string>
                     <key>complete-modeset</key>
@@ -686,7 +682,7 @@
                     <key>BundlePath</key>
                     <string>YogaSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.1 | YogaSMC.kext</string>
+                    <string>V1.5.3 | YogaSMC.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -758,7 +754,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.3 | Monterey BT Injector</string>
+                    <string>V2.6.4 | Monterey BT Injector</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -866,7 +862,7 @@
                     <key>BundlePath</key>
                     <string>RealtekCardReader.kext</string>
                     <key>Comment</key>
-                    <string>V0.9.6 | Realtek SDCard Reader (FireWolf)</string>
+                    <string>V0.9.7 | Realtek SDCard Reader (FireWolf)</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -884,7 +880,7 @@
                     <key>BundlePath</key>
                     <string>RealtekCardReaderFriend.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.3 | Realtek SDCard Reader (FireWolf)</string>
+                    <string>V1.0.4 | Realtek SDCard Reader (FireWolf)</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>

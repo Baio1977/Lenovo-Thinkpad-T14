@@ -94,6 +94,7 @@ Note: For dual external display to work, you need to connect to HDMI display 1st
 
 ## YogaSMC Panel
 
+![Lenovo](./Screenshot/7.png)
 ![Lenovo](./Screenshot/5.png)
 ![Lenovo](./Screenshot/6.png) 
 

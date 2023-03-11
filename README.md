@@ -104,4 +104,4 @@ Note: For dual external display to work, you need to connect to HDMI display 1st
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
 - [Dortania](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html) For great and detailed guides.
 - [Hackintoshlifeit](https://github.com/Hackintoshlifeit) Support group for installation and post installation.
-- (https://github.com/dolams2020) Thanks to the user for fixing the HIDPI display problem
+- [Dolams2020](https://github.com/dolams2020) Thanks to the user for fixing the HIDPI display problem

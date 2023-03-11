@@ -41,9 +41,9 @@ Bios: 1.26
 
        Boot Display Device -> Thinkpad LCD
 
-       Shared Display Priority -> USB Type-C
+       Shared Display Priority -> HDMI
 
-       Total Garphics Memory ->256MB
+       Total Garphics Memory ->512MB
 
        Boot Time Extension -> Disabled
 
@@ -81,7 +81,7 @@ Bios: 1.26
  - HDMI video and audio 
  - USB-C to HDMI Video and audio works
  - USB-C to USB-C Video but no audio
- - Thunderbolt JHL7540 Titan Ridge Work whit HotPlug
+ - Thunderbolt JHL6240 Alpine Ridge Work whit HotPlug
  
 Note: For dual external display to work, you need to connect to HDMI display 1st before USB-C to USB-C
  

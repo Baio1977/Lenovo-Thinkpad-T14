@@ -41,9 +41,9 @@ Bios: 1.26
 
        Boot Display Device -> Thinkpad LCD
 
-       Shared Display Priority -> USB Type-C
+       Shared Display Priority -> HDMI
 
-       Total Garphics Memory ->256MB
+       Total Garphics Memory ->512MB
 
        Boot Time Extension -> Disabled
 

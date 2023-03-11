@@ -81,7 +81,7 @@ Bios: 1.26
  - HDMI video and audio 
  - USB-C to HDMI Video and audio works
  - USB-C to USB-C Video but no audio
- - Thunderbolt JHL7540 Titan Ridge Work whit HotPlug
+ - Thunderbolt JHL6240 Alpine Ridge Work whit HotPlug
  
 Note: For dual external display to work, you need to connect to HDMI display 1st before USB-C to USB-C
  

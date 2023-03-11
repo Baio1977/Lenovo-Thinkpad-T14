@@ -83,8 +83,6 @@ Bios: 1.26
  - USB-C to USB-C Video but no audio
  - Thunderbolt JHL6240 Alpine Ridge Work whit HotPlug
  
-Note: For dual external display to work, you need to connect to HDMI display 1st before USB-C to USB-C
- 
 ## Not Tested:
 
 ## SSDT Full Hack

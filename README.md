@@ -11,8 +11,6 @@
  
 ## Specification:
 
-Bios: 1.30
-
 - CPU: Intel Core i5-10310u (Comet Lake) @ 1.70GHz
 - Memory: 1x 16GB DDR4 2666Mhz
 - Harddrive: 1x 256 PCIeNVMeOPAL Samsung 970 Evo Plus
@@ -33,7 +31,7 @@ Bios: 1.30
 - RJ45 Gigabit Ethernet I219-LM
  
 
-## BIOS Settings:
+## BIOS V 1.30 Settings:
 
 - Under Config Tap
 

@@ -11,7 +11,7 @@
  
 ## Specification:
 
-- CPU: Intel Core i5-10310u (Comet Lake) @ 1.70GHz
+- CPU: Intel Core i3,i5,i7-U (Comet Lake)
 - Memory: 1x 16GB DDR4 2666Mhz
 - Harddrive: 1x 256 PCIeNVMeOPAL Samsung 970 Evo Plus
 - Display: 14" non-touch 1920x1080 IPS, anti-glare 

@@ -131,4 +131,4 @@ jobs:
          release_name: EFI Lenovo ThinkPad T14 1°Gen
          body: ${{ github.event_name != 'release' && github.event.head_commit.message || '' }}
          file_glob: true
-         overwrite: true
+         overwrite: false

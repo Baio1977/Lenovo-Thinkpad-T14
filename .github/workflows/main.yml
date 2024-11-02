@@ -93,10 +93,10 @@ jobs:
         echo "Copying HfsPlus.efi to EFI/OC/Drivers..."
         cp ./OC/Drivers/HfsPlus.efi ./EFI/OC/Drivers/
 
-    - name: Copy SSDT-Thinkpad_X1Tablet_3Gen.aml to EFI/OC/ACPI
+    - name: Copy SSDT-T14Gen1.aml to EFI/OC/ACPI
       run: |
-        echo "Copying SSDT-Thinkpad_X1Tablet_3Gen.aml to EFI/OC/ACPI..."
-        cp ./OC/ACPI/SSDT-Thinkpad_X1Tablet_3Gen.aml ./EFI/OC/ACPI/
+        echo "Copying SSDT-T14Gen1.aml to EFI/OC/ACPI..."
+        cp ./OC/ACPI/SSDT-T14Gen1.aml ./EFI/OC/ACPI/
 
     - name: Clean up
       run: |
@@ -128,7 +128,7 @@ jobs:
          file: ./EFI.zip  # Make sure the file path matches
          tag: ${{ github.ref }}
          make_latest: false
-         release_name: EFI Lenovo ThinkPad T14 3°Gen
+         release_name: EFI Lenovo ThinkPad T14 1°Gen
          body: ${{ github.event_name != 'release' && github.event.head_commit.message || '' }}
          file_glob: true
          overwrite: true

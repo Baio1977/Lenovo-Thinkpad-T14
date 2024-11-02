@@ -1,0 +1,134 @@
+name: Update Artifacts and Release
+
+on:
+  push:
+    branches: 
+      - main  # Change this to your default branch
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Grant write permissions for uploading releases
+
+jobs:
+  download_opencore:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4.2.2
+
+    - name: Set up environment
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y unzip curl zip
+
+    - name: Fetch latest OpenCore release
+      id: fetch_release
+      run: |
+        echo "Fetching the latest release version from GitHub..."
+        DOWNLOAD_URL=$(curl -s https://api.github.com/repos/acidanthera/OpenCorePkg/releases/latest | grep "browser_download_url.*zip" | grep "RELEASE" | cut -d '"' -f 4)
+        echo "DOWNLOAD_URL=$DOWNLOAD_URL" >> $GITHUB_ENV
+
+    - name: Download OpenCore
+      run: |
+        echo "Downloading the latest version of OpenCore from $DOWNLOAD_URL..."
+        curl -L -o "OpenCore-Release.zip" "$DOWNLOAD_URL"
+
+    - name: Unzip the downloaded file
+      run: |
+        echo "Unzipping the archive..."
+        unzip -q "OpenCore-Release.zip"
+
+    - name: Extract X64/EFI directory
+      run: |
+        if [ -d "./X64/EFI" ]; then
+          echo "Extracting the X64/EFI folder..."
+          mv ./X64/EFI .
+        else
+          echo "Error: EFI folder not found in the unzipped content."
+          exit 1
+        fi
+
+    - name: Copy Kexts to EFI/OC/Kexts
+      run: |
+        KEXT_SOURCE="./OC/Kexts"  # Adjust this as necessary
+        KEXT_TARGET="./EFI/OC/Kexts"
+        mkdir -p "$KEXT_TARGET"
+        if [ -d "$KEXT_SOURCE" ]; then
+          echo "Copying kext files from $KEXT_SOURCE to $KEXT_TARGET..."
+          cp -R "$KEXT_SOURCE/"* "$KEXT_TARGET/"
+        else
+          echo "Error: Kext folder not found."
+          exit 1
+        fi
+    
+    - name: Copy Resources to EFI/OC
+      run: |
+        echo "Copying Resources to EFI/OC..."
+        cp -r ./OC/Resources ./EFI/OC/
+        
+    - name: Copy Config.plist to EFI/OC
+      run: |
+        echo "Copying Config.plist to EFI/OC..."
+        cp ./OC/Config.plist ./EFI/OC/
+
+    - name: Remove all files in EFI/OC/Tools
+      run: |
+        echo "Removing all files in EFI/OC/Tools..."
+        rm -rf ./EFI/OC/Tools/*
+        
+    - name: Remove unwanted drivers in EFI/OC/Drivers
+      run: |
+        echo "Removing files in EFI/OC/Drivers except for AudioDxe.efi, OpenCanopy.efi, OpenRuntime.efi, ToggleSipEntry.efi, ResetNvramEntry.efi..."
+        cd ./EFI/OC/Drivers
+        for file in *; do
+          if [[ "$file" != "AudioDxe.efi" && "$file" != "OpenCanopy.efi" && "$file" != "OpenRuntime.efi" && "$file" != "ToggleSipEntry.efi" && "$file" != "ResetNvramEntry.efi" ]]; then
+            rm -f "$file"
+          fi
+        done
+        cd -  # Return to the previous directory
+
+    - name: Copy HfsPlus.efi to EFI/OC/Drivers
+      run: |
+        echo "Copying HfsPlus.efi to EFI/OC/Drivers..."
+        cp ./OC/Drivers/HfsPlus.efi ./EFI/OC/Drivers/
+
+    - name: Copy SSDT-Thinkpad_X1Tablet_3Gen.aml to EFI/OC/ACPI
+      run: |
+        echo "Copying SSDT-Thinkpad_X1Tablet_3Gen.aml to EFI/OC/ACPI..."
+        cp ./OC/ACPI/SSDT-Thinkpad_X1Tablet_3Gen.aml ./EFI/OC/ACPI/
+
+    - name: Clean up
+      run: |
+        echo "Cleaning up..."
+        rm -rf "OpenCore-Release.zip"
+        rm -rf ./X64
+        rm -Rf Utilities
+        rm -Rf IA32
+        rm -Rf Docs
+        rm -Rf ./X64/EFI/OC/Resources
+        echo "OpenCore X64 EFI folder has been successfully extracted."
+
+    - name: Zip the EFI directory
+      run: |
+        echo "Zipping the EFI directory..."
+        zip -r EFI.zip EFI
+
+    - name: Upload EFI artifact
+      uses: actions/upload-artifact@v4.4.3
+      with:
+        name: OpenCore-EFI
+        path: EFI.zip
+    
+    - name: Upload build
+      uses: svenstaro/upload-release-action@2.9.0
+      if: github.event_name != 'pull_request'
+      with:
+         repo_token: ${{ secrets.GITHUB_TOKEN }}
+         file: ./EFI.zip  # Make sure the file path matches
+         tag: ${{ github.ref }}
+         make_latest: false
+         release_name: EFI Lenovo ThinkPad T14 3°Gen
+         body: ${{ github.event_name != 'release' && github.event.head_commit.message || '' }}
+         file_glob: true
+         overwrite: true

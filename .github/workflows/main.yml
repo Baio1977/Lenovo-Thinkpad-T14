@@ -26,7 +26,7 @@ jobs:
       id: fetch_release
       run: |
         echo "Fetching the latest release version from GitHub..."
-        DOWNLOAD_URL=$(curl -s https://api.github.com/repos/acidanthera/OpenCorePkg/releases/latest | grep "browser_download_url.*zip" | grep "RELEASE" | cut -d '"' -f 4)
+        DOWNLOAD_URL=$(curl -s https://api.github.com/repos/acidanthera/OpenCorePkg/commits/master | grep "browser_download_url.*zip" | grep "RELEASE" | cut -d '"' -f 4)
         echo "DOWNLOAD_URL=$DOWNLOAD_URL" >> $GITHUB_ENV
 
     - name: Download OpenCore

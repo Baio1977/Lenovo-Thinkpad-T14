@@ -31,7 +31,7 @@
 - RJ45 Gigabit Ethernet I219-LM
  
 
-## BIOS V 1.30 Settings:
+## BIOS V 1.32 Settings:
 
 - Under Config Tap
 

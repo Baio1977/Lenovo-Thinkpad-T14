@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>22A380</string>
+	<string>24B91</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,29 +17,29 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.9.7</string>
+	<string>0.9.8</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>0.9.7</string>
+	<string>0.9.8</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>14A400</string>
+	<string>24B75</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>12.3</string>
+	<string>15.1</string>
 	<key>DTSDKBuild</key>
-	<string>21E226</string>
+	<string>24B75</string>
 	<key>DTSDKName</key>
-	<string>macosx12.3</string>
+	<string>macosx15.1</string>
 	<key>DTXcode</key>
-	<string>1401</string>
+	<string>1610</string>
 	<key>DTXcodeBuild</key>
-	<string>14A400</string>
+	<string>16B40</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>IOSDBlockStorageDevice</key>
@@ -355,7 +355,7 @@
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.14</string>
+	<string>10.13</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2021 FireWolf. All rights reserved.</string>
 	<key>OSBundleLibraries</key>

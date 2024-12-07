@@ -59,8 +59,6 @@
 			</array>
 			<key>IOProviderClass</key>
 			<string>VoodooI2CDeviceNub</string>
-			<key>Legacy</key>
-			<false/>
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>

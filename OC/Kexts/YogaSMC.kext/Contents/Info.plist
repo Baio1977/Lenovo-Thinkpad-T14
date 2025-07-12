@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20G817</string>
+	<string>23E224</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,45 +17,41 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.5.3</string>
+	<string>2.0.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.5.3</string>
+	<string>2.0.0</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>13C100</string>
+	<string></string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>12.1</string>
+	<string>14.0</string>
 	<key>DTSDKBuild</key>
-	<string>21C46</string>
+	<string>23A334</string>
 	<key>DTSDKName</key>
-	<string>macosx12.1</string>
+	<string>macosx14.0</string>
 	<key>DTXcode</key>
-	<string>1321</string>
+	<string>1501</string>
 	<key>DTXcodeBuild</key>
-	<string>13C100</string>
+	<string>15A507</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>DYVPC</key>
+		<key>DYSMC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>org.zhen.YogaSMC</string>
 			<key>IOClass</key>
-			<string>DYVPC</string>
-			<key>IONameMatch</key>
-			<string>PNP0C14</string>
+			<string>DYSMC</string>
 			<key>IOProbeScore</key>
-			<integer>200</integer>
+			<integer>100</integer>
 			<key>IOProviderClass</key>
-			<string>IOACPIPlatformDevice</string>
-			<key>IOUserClientClass</key>
-			<string>YogaSMCUserClient</string>
+			<string>DYVPC</string>
 			<key>Sensors</key>
 			<dict>
 				<key>Airflow Left</key>
@@ -86,20 +82,31 @@
 				<false/>
 			</dict>
 		</dict>
-		<key>IdeaVPC</key>
+		<key>DYVPC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>org.zhen.YogaSMC</string>
 			<key>IOClass</key>
-			<string>IdeaVPC</string>
+			<string>DYVPC</string>
 			<key>IONameMatch</key>
-			<string>VPC2004</string>
+			<string>PNP0C14</string>
 			<key>IOProbeScore</key>
 			<integer>200</integer>
 			<key>IOProviderClass</key>
 			<string>IOACPIPlatformDevice</string>
 			<key>IOUserClientClass</key>
 			<string>YogaSMCUserClient</string>
+		</dict>
+		<key>IdeaSMC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.zhen.YogaSMC</string>
+			<key>IOClass</key>
+			<string>IdeaSMC</string>
+			<key>IOProbeScore</key>
+			<integer>100</integer>
+			<key>IOProviderClass</key>
+			<string>IdeaVPC</string>
 			<key>Sensors</key>
 			<dict>
 				<key>Airflow Left</key>
@@ -130,29 +137,31 @@
 				<false/>
 			</dict>
 		</dict>
-		<key>ThinkVPC</key>
+		<key>IdeaVPC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>org.zhen.YogaSMC</string>
 			<key>IOClass</key>
-			<string>ThinkVPC</string>
+			<string>IdeaVPC</string>
+			<key>IONameMatch</key>
+			<string>VPC2004</string>
 			<key>IOProbeScore</key>
 			<integer>200</integer>
-			<key>IOPropertyMatch</key>
-			<array>
-				<dict>
-					<key>name</key>
-					<string>LEN0268</string>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>LEN0068</string>
-				</dict>
-			</array>
 			<key>IOProviderClass</key>
 			<string>IOACPIPlatformDevice</string>
 			<key>IOUserClientClass</key>
 			<string>YogaSMCUserClient</string>
+		</dict>
+		<key>ThinkSMC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.zhen.YogaSMC</string>
+			<key>IOClass</key>
+			<string>ThinkSMC</string>
+			<key>IOProbeScore</key>
+			<integer>100</integer>
+			<key>IOProviderClass</key>
+			<string>ThinkVPC</string>
 			<key>Sensors</key>
 			<dict>
 				<key>Airflow Left</key>
@@ -182,6 +191,30 @@
 				<key>SO-DIMM 4 Proximity</key>
 				<false/>
 			</dict>
+		</dict>
+		<key>ThinkVPC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.zhen.YogaSMC</string>
+			<key>IOClass</key>
+			<string>ThinkVPC</string>
+			<key>IOProbeScore</key>
+			<integer>200</integer>
+			<key>IOPropertyMatch</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>LEN0268</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>LEN0068</string>
+				</dict>
+			</array>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+			<key>IOUserClientClass</key>
+			<string>YogaSMCUserClient</string>
 		</dict>
 		<key>YogaHIDD</key>
 		<dict>
@@ -241,7 +274,7 @@
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.9</string>
+	<string>10.14.4</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Zhen. All rights reserved.</string>
 	<key>OSBundleLibraries</key>

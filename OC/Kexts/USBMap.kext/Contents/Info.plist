@@ -60,7 +60,7 @@
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>9</integer>
+						<integer>0</integer>
 						<key>port</key>
 						<data>AwAAAA==</data>
 						<key>usb-port-type</key>
@@ -115,11 +115,11 @@
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>10</integer>
+						<integer>9</integer>
 						<key>port</key>
 						<data>DgAAAA==</data>
 						<key>usb-port-type</key>
-						<integer>10</integer>
+						<integer>9</integer>
 						<key>usb-port-number</key>
 						<data>DgAAAA==</data>
 					</dict>

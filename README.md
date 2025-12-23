@@ -1,10 +1,10 @@
-[![Update Artifacts and Release](https://github.com/Baio1977/Lenovo-Thinkpad-T14/actions/workflows/main.yml/badge.svg)](https://github.com/Baio1977/Lenovo-Thinkpad-T14/actions/workflows/main.yml)
+8[![Update Artifacts and Release](https://github.com/Baio1977/Lenovo-Thinkpad-T14/actions/workflows/main.yml/badge.svg)](https://github.com/Baio1977/Lenovo-Thinkpad-T14/actions/workflows/main.yml)
 
 [![](https://img.shields.io/badge/Reposity-Baio77-informational?style=flat&logo=apple&logoColor=white&color=9debeb)](https://github.com/Baio1977?tab=repositories)
 [![](https://img.shields.io/badge/Telegram-HackintoshLifeIT-informational?style=flat&logo=telegram&logoColor=white&color=5fb659)](https://t.me/HackintoshLife_it)
 
 
-# Lenovo Thinkpad T14
+# Lenovo Thinkpad T14 Gen 1 (Type 20S0,20S1)
 
 ![Lenovo](./Screenshot/1.png)
 ![Lenovo](./Screenshot/2.png)
@@ -31,7 +31,7 @@
 - RJ45 Gigabit Ethernet I219-LM
  
 
-## BIOS V 1.32 Settings:
+## BIOS V 1.34 Settings:
 
 - Under Config Tap
 
@@ -82,6 +82,10 @@
  - Thunderbolt JHL6240 Alpine Ridge Work whit HotPlug
  
 ## Not Tested:
+
+## USB Map
+
+![Lenovo](./Screenshot/8.png)
 
 ## SSDT Full Hack
 

@@ -1,4 +1,4 @@
-8[![Update Artifacts and Release](https://github.com/Baio1977/Lenovo-Thinkpad-T14/actions/workflows/main.yml/badge.svg)](https://github.com/Baio1977/Lenovo-Thinkpad-T14/actions/workflows/main.yml)
+[![Update Artifacts and Release](https://github.com/Baio1977/Lenovo-Thinkpad-T14/actions/workflows/main.yml/badge.svg)](https://github.com/Baio1977/Lenovo-Thinkpad-T14/actions/workflows/main.yml)
 
 [![](https://img.shields.io/badge/Reposity-Baio77-informational?style=flat&logo=apple&logoColor=white&color=9debeb)](https://github.com/Baio1977?tab=repositories)
 [![](https://img.shields.io/badge/Telegram-HackintoshLifeIT-informational?style=flat&logo=telegram&logoColor=white&color=5fb659)](https://t.me/HackintoshLife_it)

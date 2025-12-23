@@ -1,7 +1,7 @@
 CPU BrandString: Intel(R) Core(TM) i5-10310U CPU @ 1.70GHz
-MicrocodeRevision: 0x000000FA
+MicrocodeRevision: 0x00000100
 Virtualization 0
-CPUID 000806EC 00100800 7FFAFBFF BFEBFBFF
+CPUID 000806EC 00100800 77FAFBFF BFEBFBFF
 ExtSigEcx 00000121
 ExtSigEdx 2C100800
 Type 0x00
@@ -10,7 +10,7 @@ Model 0x8E
 ExtModel 0x08
 ExtFamily 0x00
 Stepping 0x0C
-Features 0x7FFAFBFFBFEBFBFF
+Features 0x77FAFBFFBFEBFBFF
 ExtFeatures 0x000001212C100800
 Signature 0x000806EC
 Brand 0x00
